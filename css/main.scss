@@ -1,0 +1,49 @@
+$font-stack:    Helvetica, sans-serif;
+$primary: white;
+$second: #fbf2e9; 
+$third: lightblue;
+
+body {
+  font: 100% $font-stack;
+  color: $primary;
+  background: $second;
+}
+
+#navsection {
+    background-color: white !important;
+}
+
+#logo {
+    height: 50px;
+}
+
+#cube {
+    margin-top: 14vh;
+    margin-left: 34vw;
+}
+
+
+button {
+    margin: 5px;
+    width: 80px;
+}
+
+input {
+    margin: 5px;
+}
+
+
+.jumbotron {
+    margin-top: 5vh;
+    margin-left: 22vw;
+    background: #fbf2e9;    
+}   
+
+.login-status {
+    text-align: center;
+    border: 1px solid black;
+    width: 160px;
+    margin: 0 auto;
+
+}
+
