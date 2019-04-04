@@ -1,4 +1,4 @@
-$font-stack:    Helvetica, sans-serif;
+$font-stack: 'Montserrat', sans-serif;
 $primary: white;
 $second: #fbf2e9; 
 $third: lightblue;
@@ -22,7 +22,6 @@ body {
     margin-left: 34vw;
 }
 
-
 button {
     margin: 5px;
     width: 80px;
@@ -31,7 +30,6 @@ button {
 input {
     margin: 5px;
 }
-
 
 .jumbotron {
     margin-top: 5vh;
@@ -44,6 +42,10 @@ input {
     border: 1px solid black;
     width: 160px;
     margin: 0 auto;
+}
 
+.home p {
+    text-align: center;
+    color: black;
 }
 

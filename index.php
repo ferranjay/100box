@@ -1,5 +1,5 @@
-<?php 
-    require "header.php";
+<?php
+require "header.php";
 ?>
 
     <main>
@@ -9,28 +9,30 @@
         </div>
 
         <div class="jumbotron">
-        <form id="form" action="includes/login.inc.php" method="post">
-                    <input type="text" name="mailuid" placeholder="Username / E-mail"><br>
-                    <input type="password" name="pwd" placeholder="Password"><br>
-                </form>
-                <form action="includes/logout.inc.php" method="post">
-                    <button class="btn btn-light" type="sumbit" name="login-submit">Login</button>
-                    <button class="btn btn-light" type="sumbit" name="logout-submit">Logout</button>  
-                </form>
-                <button type="button" class="btn btn-info" type="sumbit" name="signup-submit">Signup</button>
-        </div>
-
-    <!--
-        <div class="wrapper-main">
+          <div class="wrapper-main">
             <section class="section-default">
-                <p class="login-status">You are logged out!</p>
-                <p class="login-status">You are logged in!</p>
+            <?php
+                if (isset($_SESSION["userId"])) {
+                    echo '<form action="includes/logout.inc.php" method="post">
+                          <button class="btn btn-light" type="sumbit" name="logout-submit">Logout</button>
+                          </form>';
+                    } else {
+                        echo ' <form id="form" action="includes/login.inc.php" method="post">
+                               <input type="text" name="mailuid" placeholder="Username / E-mail"><br>
+                               <input type="password" name="pwd" placeholder="Password"><br>
+                               <button class="btn btn-light" type="sumbit" name="login-submit">Login</button>
+                               <a href="signup.php" class="btn btn-info">Signup</a>
+                               </form>';
+                    }
+            ?>
             </section>
+          </div>
         </div>
     </main>
-    -->
+
 
 <?php
-    require "footer.php";
+require "footer.php";
 ?>
+
 

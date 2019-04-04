@@ -1,5 +1,5 @@
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% "Roboto", sans-serif;
   color: white;
   background: #fbf2e9;
 }
@@ -37,5 +37,9 @@ input {
   border: 1px solid black;
   width: 160px;
   margin: 0 auto;
+}
+
+.home p {
+  color: black !important;
 }
 /*# sourceMappingURL=main.css.map */
