@@ -22,6 +22,10 @@ body {
     margin-left: 34vw;
 }
 
+#cubehome {
+    height: 30px;
+}
+
 button {
     margin: 5px;
     width: 80px;
@@ -37,6 +41,11 @@ input {
     background: #fbf2e9;    
 }   
 
+#hometext {
+    margin-top: 5vh;
+    margin-left: 0 !important;
+}
+
 .login-status {
     text-align: center;
     border: 1px solid black;
@@ -45,7 +54,7 @@ input {
 }
 
 .home p {
-    text-align: center;
     color: black;
 }
+
 

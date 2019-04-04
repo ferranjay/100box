@@ -11,15 +11,16 @@ if(isset($_POST['login-submit'])) {
         exit(); 
     }
     else {
-        $sql = "SELECT * FROM users WHERE uidUsers=?;"; 
+        $sql = "SELECT * FROM users WHERE emailUsers=?;"; 
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
             header("Location: ../index.php?error=sqlerror");
             exit(); 
         }else {
-            mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
+            mysqli_stmt_bind_param($stmt, "s", $mailuid);
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
+            //var_dump( $result );
             if ($row = mysqli_fetch_assoc($result)) {
                 $pwdCheck = password_verify($password, $row['pwdUsers']);
                 if ($pwdCheck == false) {
@@ -30,16 +31,18 @@ if(isset($_POST['login-submit'])) {
                     session_start();
                     $_SESSION['userId'] = $row['idUsers'];
                     $_SESSION['userUid'] = $row['uidUsers'];
-
+                    echo " SUCCES!!!!";
                     header("Location: ../home.php?login=success");
                     exit(); 
                 }
                 else {
+                    echo " Verkeerde pw";
                     header("Location: ../index.php?error=wrongpwd");
                     exit(); 
                 }
             }else {
-                header("Location: ../home.php");
+                echo " User bestaat niet";
+                header("Location: ../index.php");
                 exit(); 
             }
         }

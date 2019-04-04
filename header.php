@@ -1,3 +1,7 @@
+<?php 
+  session_start(); 
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,12 +33,16 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PROJECTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">IDEAS</a>
-          </li>
+
+          <?php
+                if (isset($_SESSION["userId"])) {
+                    echo '<li class="nav-item"><a class="nav-link" href="projects.php">PROJECTS</a></li>
+                          <li class="nav-item"><a class="nav-link" href="ideas.php">IDEAS</a></li><br>
+                          <li class="nav-item"><a class="nav-link" href="index.php">LOGOUT</a></li>';
+                    } else {
+                        echo '';
+                    }
+            ?>
         </ul>
       </div>
     </nav>
