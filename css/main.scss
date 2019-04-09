@@ -6,7 +6,7 @@ $third: lightblue;
 body {
   font: 100% $font-stack;
   color: $primary;
-  background: $second;
+  background: $second !important;
 }
 
 #navsection {

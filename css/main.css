@@ -1,7 +1,13 @@
 body {
-  font: 100% "Roboto", sans-serif;
+  font: 100% "Montserrat", sans-serif;
   color: white;
-  background: #fbf2e9;
+  background: #fbf2e9 !important;
+}
+
+.welcomemsg {
+  height: 300px;
+  width: 300px;
+  background: red;
 }
 
 #navsection {
@@ -15,6 +21,10 @@ body {
 #cube {
   margin-top: 14vh;
   margin-left: 34vw;
+}
+
+#cubehome {
+  height: 30px;
 }
 
 button {
@@ -32,6 +42,11 @@ input {
   background: #fbf2e9;
 }
 
+#hometext {
+  margin-top: 5vh;
+  margin-left: 0 !important;
+}
+
 .login-status {
   text-align: center;
   border: 1px solid black;
@@ -40,6 +55,6 @@ input {
 }
 
 .home p {
-  color: black !important;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

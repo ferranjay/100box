@@ -1,6 +1,11 @@
 <?php
     
     include "db_connection.php";
+   
+    echo $_POST['user_email'];
+    
+    echo $_POST['user_password'];
+
     if(isset($_POST['user_email']) && isset($_POST['user_password'])){
         $user_email = $_POST['user_email'];
         $user_password = $_POST['user_password'];
@@ -14,10 +19,14 @@
         if ($db_result->rowCount() != 0){
         
             foreach($db_result as $row){
-            $user_name = $row['user_name'];
+                //$user_name = $row['user_name'];
+                session_start();
+                $_SESSION['LOGGED_IN']  = true;
+                $_SESSION['oeser_neem']  = $row['user_name'];
             }
 
-            echo "welcome " . $user_name;
+            //echo '<div class="welcomemsg">' . welcome . $user_name . '</div>';
+            header("location:home.php");
         }
         else 
         {
@@ -29,4 +38,5 @@
     }else{
             echo "please fill in your email and password";
     }
+
 ?>
