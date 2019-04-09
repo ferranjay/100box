@@ -12,12 +12,23 @@ include "db_connection.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <title>Register</title>
+    <title>100Box</title>
   </head>
 
-<body>
-    <form class="form" action="registerFormHandler.php" method="POST">  
+  <body>
+  <nav id="navsection" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.php"><img id="logo" src="img/100.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
+
+
+
+    <form class="registerForm" action="registerFormHandler.php" method="POST">  
+        <h2>Register</h2>
         <input class="input_fields" type="text" name="user_name" placeholder="username" required maxlength="32" autofocus><br>
         <input class="input_fields"type="email" name="user_email" placeholder="email" required maxlength="32"><br>
         <input class="input_fields" type="password" name="password1" minlenght=8 placeholder="password" required maxlength="32"><br>

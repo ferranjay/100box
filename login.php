@@ -12,23 +12,29 @@ include "db_connection.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <title>Login</title>
+    <title>100Box</title>
   </head>
   <body>
-    <h1>Please login to access the website</h1>
+  <nav id="navsection" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.php"><img id="logo" src="img/100.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    </nav>
 
 
     <form class="loginForm" action="loginFormHandler.php" method="POST">
-        <h1>Login</h1>
+        <h2>Login</h2>
         <label for="username">Email:</label>
-        <input type="email" id="username" name="user_email" autofocus required/>
+        <input type="email" id="username" name="user_email" autofocus required/><br>
         
         <label for="password">Password:</label>
-        <input type="password" id="password" name="user_password" required/>
+        <input type="password" id="password" name="user_password" required/><br>
 
         <button type="submit" class="submitButton">Login</button>
-        <p>Don't have an account? <a href="register.php">Register here</a></p>
+        <p>Don't have an account? <a href="register.php"><br>Register here</a></p>
     </form>
 
 
