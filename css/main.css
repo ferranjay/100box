@@ -37,10 +37,9 @@ input {
 }
 
 .jumbotron {
-  margin-top: 10vh;
-  width: 40vw;
+  margin-top: 5vh;
+  width: 300px;
   background: #fbf2e9 !important;
-  padding: 30px !important;
   text-align: center;
 }
 
