@@ -89,3 +89,13 @@ input {
   margin: 5vh;
 }
 
+
+/* Idea Box wrapper */
+
+.wrapper {
+  display: grid;
+  height: 80vh;
+  width: 40vw;
+  margin: 10vh auto;
+}
+

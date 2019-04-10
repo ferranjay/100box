@@ -25,16 +25,16 @@ include "db_connection.php";
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.php">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link" href="#">Projects</a>
+                     <a class="nav-link" href="projects.php">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Idea Box</a>
+                    <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
             </ul>
         </div>

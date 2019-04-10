@@ -34,7 +34,7 @@ include "db_connection.php";
                     <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><?php 
@@ -49,13 +49,7 @@ include "db_connection.php";
         </div>
     </nav>
 
-
-
-
-    <div class="jumbotron mx-auto">
-        
-        
-    </div>
+    
 
 
  <!-- Optional JavaScript -->
