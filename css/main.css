@@ -4,11 +4,7 @@ body {
   background: #fbf2e9 !important;
 }
 
-.welcomemsg {
-  height: 300px;
-  width: 300px;
-  background: red;
-}
+/* Navigation bar */
 
 #navsection {
   background-color: white !important;
@@ -19,12 +15,22 @@ body {
 }
 
 #cube {
-  margin-top: 14vh;
+  margin-top: 10vh;
   margin-left: 34vw;
 }
 
 #cubehome {
   height: 30px;
+}
+
+#hometext {
+  margin-top: 5vh;
+  margin-left: 0 !important;
+}
+
+#introbox {
+  display: grid;
+  margin: 100px auto;
 }
 
 button {
@@ -38,25 +44,13 @@ input {
 
 .jumbotron {
   margin-top: 5vh;
-  width: 300px;
+  width: 500px;
   background: #fbf2e9 !important;
   text-align: center;
 }
 
-#hometext {
-  margin-top: 5vh;
-  margin-left: 0 !important;
-}
-
-.login-status {
-  text-align: center;
-  border: 1px solid black;
-  width: 160px;
-  margin: 0 auto;
-}
-
 .loginForm {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
   display: grid;
   margin: 20vh auto;
   padding: 20px;
@@ -66,8 +60,16 @@ input {
   border-radius: 15px;
 }
 
+/* Welcome message when logged in */
+
+.welcomemsg {
+  height: 300px;
+  width: 300px;
+  background: red;
+}
+
 .registerForm {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
   display: grid;
   margin: 20vh auto;
   padding: 20px;
@@ -81,8 +83,9 @@ input {
   color: black;
 }
 
-#introbox {
-  display: grid;
-  margin: 100px auto;
+/* Projects */
+
+.card-deck {
+  margin: 5vh;
 }
-/*# sourceMappingURL=main.css.map */
+

@@ -25,35 +25,70 @@ include "db_connection.php";
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.php">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link" href="#">Projects</a>
+                     <a class="nav-link" href="projects.php">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Idea Box</a>
+                    <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">&nbsp;&nbsp;&nbsp;&nbsp;<?php 
+                        session_start();
+                          if(isset($_SESSION['LOGGED_IN'])){
+                                echo $_SESSION{'oeser_neem'};
+                            }else{
+                                echo "<p> something went wrong, please try again! </p>";
+                            } ?></a>
+                </li>
             </ul>
         </div>
     </nav>
-    <img id="introbox" src="img/3d.png">
+
+    <div class="card-deck">
+  <div class="card">
+    <img src="img/tennis.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Project 1</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><a href="#" class="btn btn-outline-danger">Go somewhere</a></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/model.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Project 2</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><a href="#" class="btn btn-outline-danger">Go somewhere</a></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/volkswagen.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Project 3</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><a href="#" class="btn btn-outline-danger">Go somewhere</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="jumbotron mx-auto">
-        <h1 class="display-6">Good day,
-
-        <?php 
-            session_start();
-            if(isset($_SESSION['LOGGED_IN'])){
-                echo $_SESSION{'oeser_neem'};
-            }else{
-                echo "<p> something went wrong, please try again! </p>";
-            }
-        ?> !</h1>
-        <br>
-        <p class="lead">Welcome to the "Idea Box".  This platform is meant to serve as a place where employees can share ideas and keep up to date with the company projects</p>
+        
         
     </div>
 

@@ -25,35 +25,35 @@ include "db_connection.php";
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.php">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link" href="#">Projects</a>
+                     <a class="nav-link" href="projects.php">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Idea Box</a>
+                    <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><?php 
+                        session_start();
+                          if(isset($_SESSION['LOGGED_IN'])){
+                                echo $_SESSION{'oeser_neem'};
+                            }else{
+                                echo "<p> something went wrong, please try again! </p>";
+                            } ?></a>
+                </li>
             </ul>
         </div>
     </nav>
-    <img id="introbox" src="img/3d.png">
+
+
+
 
     <div class="jumbotron mx-auto">
-        <h1 class="display-6">Good day,
-
-        <?php 
-            session_start();
-            if(isset($_SESSION['LOGGED_IN'])){
-                echo $_SESSION{'oeser_neem'};
-            }else{
-                echo "<p> something went wrong, please try again! </p>";
-            }
-        ?> !</h1>
-        <br>
-        <p class="lead">Welcome to the "Idea Box".  This platform is meant to serve as a place where employees can share ideas and keep up to date with the company projects</p>
+        
         
     </div>
 
