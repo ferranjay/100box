@@ -2,20 +2,10 @@
 include "db_connection.php";     
 ?>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php 
+include "header.php";
+?>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <title>100Box</title>
-  </head>
   <body>
     <nav id="navsection" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="home.php"><img id="logo" src="img/100.png"></a>
@@ -34,7 +24,7 @@ include "db_connection.php";
                     <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+                    <a class="nav-link" href="login.php" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +32,7 @@ include "db_connection.php";
     <img id="introbox" src="img/3d.png">
 
     <div class="jumbotron mx-auto">
-        <h1 class="display-6">Good day,
+        <h1 class="display-6">Welcome,
 
         <?php 
             session_start();
@@ -53,7 +43,7 @@ include "db_connection.php";
             }
         ?> !</h1>
         <br>
-        <p class="lead">Welcome to the "Idea Box".  This platform is meant to serve as a place where employees can share ideas and keep up to date with the company projects</p>
+        <p class="lead">Welcome to the "Idea Box".  This platform is meant to serve as a place where employees can share ideas and keep up to date with company projects</p>
         
     </div>
 

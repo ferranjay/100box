@@ -1,21 +1,10 @@
 <?php 
 include "db_connection.php";     
 ?>
+<?php 
+include "header.php";
+?>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <title>100Box</title>
-  </head>
   <body>
     <nav id="navsection" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="home.php"><img id="logo" src="img/100.png"></a>
@@ -34,7 +23,7 @@ include "db_connection.php";
                     <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+                    <a class="nav-link" href="logout.php" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">&nbsp;&nbsp;&nbsp;&nbsp;<?php 

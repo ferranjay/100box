@@ -39,4 +39,10 @@
             echo "please fill in your email and password";
     }
 
+    if(!empty($_POST["logout"])) {
+	$_SESSION["user_name"] = "";
+	session_destroy();
+}
+
+
 ?>
