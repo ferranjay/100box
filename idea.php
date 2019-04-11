@@ -55,7 +55,7 @@ include "header.php";
 ?>
 
 
-<h3>Post a new idea or share information</h3>
+<h3 id="ideatext">Post a new idea or share information</h3>
 
 <!-- Deze code geeft een bevestigingsbericht weer om de gebruiker te laten weten dat er een nieuw record in de database is aangemaakt. -->
     
