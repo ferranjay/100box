@@ -32,7 +32,7 @@ include "header.php";
     <img id="introbox" src="img/3d.png">
 
     <div class="jumbotron mx-auto">
-        <h1 class="display-6">Welcome,
+        <h1 class="display-6">Hello,
 
         <?php 
             session_start();

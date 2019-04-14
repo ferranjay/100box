@@ -23,6 +23,9 @@ include "header.php";
                     <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="video.php">Video</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="logout.php" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
                 <li class="nav-item">
@@ -43,7 +46,7 @@ include "header.php";
     <img src="img/tennis.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Project 1</h5>
-      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">April 2019 </p>
       <p class="card-text"><a href="#" class="btn btn-outline-danger">Go somewhere</a></p>
     </div>
   </div>
@@ -51,7 +54,7 @@ include "header.php";
     <img src="img/model.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Project 2</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text">Mei 2019</p>
       <p class="card-text"><a href="#" class="btn btn-outline-danger">Go somewhere</a></p>
     </div>
   </div>
@@ -59,7 +62,7 @@ include "header.php";
     <img src="img/volkswagen.png" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Project 3</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text">Mei 2019</p>
       <p class="card-text"><a href="#" class="btn btn-outline-danger">Go somewhere</a></p>
     </div>
   </div>

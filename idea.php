@@ -25,6 +25,9 @@ include "header.php";
                     <a class="nav-link" href="idea.php">Idea Box</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="video.php">Video</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="logout.php" tabindex="-1" aria-disabled="true">Logout</a>
                 </li>
                 <li class="nav-item">
@@ -88,10 +91,10 @@ include "header.php";
 			<td><?php echo $row['post_text']; ?></td>
 			<td><?php echo $row['post_img']; ?></td>
 			<td>
-				<a href="index.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >EDIT</a>
+				<a href="idea.php?edit=<?php echo $row['post_id']; ?>" class="edit_btn" name="edit" >EDIT</a>
 			</td>
 			<td>
-				<a href="db_connection.php?del=<?php echo $row['id']; ?>" class="del_btn">DELETE</a>
+				<a href="db_connection.php?del=<?php echo $row['post_id']; ?>" class="del_btn" name="del">DELETE</a>
 			</td>
 		</tr>
     <?php } ?>

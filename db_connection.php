@@ -51,7 +51,7 @@ catch(PDOException $e)
 	$_SESSION['message'] = "post updated!"; 
 	header('location: idea.php');
     }
-    
+
 
 // men kan er ook voor kiezen om een 'record' te deleten en dat gebeurd met de onderstaande query
 
